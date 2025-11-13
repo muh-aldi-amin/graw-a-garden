@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrowaGarden - Bibit & Tips Menanam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌱 Grow a Garden</h1>
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#tips">Tips Menanam</a>
+      <a href="#bibit">Daftar Bibit</a>
+      <a href="#pesan">Pesan Bibit</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Tanam, Rawat, Panen, Bahagia 🌾</h2>
+    <p>Temukan bibit terbaik dan pelajari cara menanam dengan mudah bersama GrowaGarden.</p>
+    <button onclick="scrollToSection('bibit')">Mulai Sekarang</button>
+  </section>
+
+  <section id="tips" class="content">
+    <h2>Tips Menanam untuk Pemula 🌿</h2>
+    <ul>
+      <li>Pilih bibit sesuai kondisi tanah dan cuaca daerahmu.</li>
+      <li>Gunakan pupuk organik untuk hasil yang lebih sehat.</li>
+      <li>Pastikan tanaman mendapat cukup sinar matahari.</li>
+      <li>Siram secara teratur, tapi jangan berlebihan.</li>
+    </ul>
+  </section>
+
+  <section id="bibit" class="content">
+    <h2>Daftar Bibit yang Tersedia 🪴</h2>
+    <div class="bibit-container" id="bibitList">
+      <!-- Daftar bibit diisi dari JavaScript -->
+    </div>
+  </section>
+
+  <section id="pesan" class="content">
+    <h2>Form Pemesanan Bibit 🌻</h2>
+    <form id="formPesan">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required>
+
+      <label for="bibit">Pilih Bibit:</label>
+      <select id="bibitSelect" required></select>
+
+      <label for="jumlah">Jumlah:</label>
+      <input type="number" id="jumlah" min="1" required>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+    <p id="pesanSukses"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 GrowaGarden | Dibuat dengan cinta oleh Mimin untuk Tuan Aldi 💚</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
